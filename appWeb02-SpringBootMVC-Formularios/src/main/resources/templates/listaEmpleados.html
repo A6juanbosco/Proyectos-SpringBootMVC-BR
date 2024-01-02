@@ -38,6 +38,7 @@
                 <th>Nombre</th>
                 <th>Email</th>
                 <th>Teléfono</th>
+                <th>Operaciones</th>
             </thead>
             <tbody>
             <tr th:each="empleado : ${listaEmpleados}">
@@ -45,6 +46,7 @@
                 <td th:text="${empleado.nombre}">Pepe Pérez</td>
                 <td th:text="${empleado.email}">pepe.perez@openwebinars.net</td>
                 <td th:text="${empleado.telefono}">954000000</td>
+                <td> <a th:href="@{/empleado/editar/{id} (id=${empleado.id})} " >Editar</a></td>
             </tr>
             </tbody>
 
