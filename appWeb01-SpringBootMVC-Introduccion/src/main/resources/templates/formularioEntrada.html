@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="/css/formulario.css">
+
+</head>
+<body>
+<h2>Ingresa tus datos</h2>
+<form action="#" th:action="@{/procesar}" th:object="${datos}" method="post">
+    <label>Nombre:</label>
+    <input type="text" th:field="*{nombre}" required/><br/>
+
+    <label>Apellidos:</label>
+    <input type="text" th:field="*{apellidos}" required/><br/>
+
+    <label>Teléfono:</label>
+    <input type="text" th:field="*{telefono}" required/><br/>
+
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>
+>

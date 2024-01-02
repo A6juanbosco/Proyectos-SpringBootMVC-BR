@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Salida</title>
+    <link rel="stylesheet" type="text/css" href="/css/salida.css">
+</head>
+<body>
+<h2>Datos recibidos:</h2>
+<div class="datos">
+    <p th:text="'Nombre: ' + ${datos.nombre}"></p>
+    <p th:text="'Apellidos: ' + ${datos.apellidos}"></p>
+    <p th:text="'Teléfono: ' + ${datos.telefono}"></p>
+</div>
+
+<!-- Botón para volver al formulario -->
+<div>
+    <a th:href="@{/formulario}">
+        <button>Volver al Formulario</button>
+    </a>
+</div>
+
+<!-- Sección con estilo similar al formulario -->
+<div class="formulario-estilo">
+    <!-- Contenido de la sección similar al formulario -->
+</div>
+</body>
+</html>
