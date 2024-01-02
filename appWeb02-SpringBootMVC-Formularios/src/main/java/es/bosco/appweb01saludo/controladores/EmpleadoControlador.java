@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller
-@RequestMapping("/empleado")
+@RequestMapping({"/","/empleado"})
 public class EmpleadoControlador {
 
     @Autowired
